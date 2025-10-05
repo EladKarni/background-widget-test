@@ -1,6 +1,30 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
-  }
+    "allowImportingTsExtensions": true,
+    "allowJs": true,
+    "baseUrl": "./",
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "paths": {
+      "src/*": ["src/*"]
+    },
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "target": "ES2020",
+    "useDefineForClassFields": true
+  },
+  "include": ["**/*.ts", "**/*.tsx", "*.js", ".expo/types/**/*.ts", "expo-env.d.ts", "metro.config.cjs", "babel.config.cjs", "eslint.config.mjs"],
+  "exclude": ["node_modules", "dist"]
 }
